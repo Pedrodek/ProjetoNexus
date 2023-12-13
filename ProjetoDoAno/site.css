@@ -1,0 +1,752 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    /* display: flex; */
+}
+ 
+::-webkit-scrollbar-track {
+  background-image: linear-gradient(#000, rgb(7, 131, 198));
+  opacity: 0;
+  
+}
+
+::-webkit-scrollbar {
+  width: .8rem;
+  opacity: .1;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #00b3ff;
+  }  
+
+::-webkit-scrollbar-thumb {
+    background-color: #0080ff;
+    
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #0060ff;
+  }
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    padding: 1rem 3rem;
+    margin-right: 2vw;
+    /*background-image: linear-gradient(165deg, #0a33ff, #002aff);*/
+    /*background-color: rgb(2, 0, 48, .1);*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    overflow: hidden;
+}
+
+
+
+.logo {
+    display: flex;
+    font-size: 1em;
+    color: whitesmoke;
+    user-select: none;
+    justify-content: space-between;
+    margin-left: 2vw;
+}
+
+.logo-imagem {
+    width: 3rem;
+    height: 3rem;
+    margin-right: .5vw;
+
+}
+
+.logo-imagem-menor {
+    width: 2rem;
+    height: .8rem;
+    margin-right: .2vw;
+    top: 2vh;
+
+}
+
+.logo-imagem-body {
+    position: absolute;
+    right: 11vw;
+    top: 22vh;
+    height: 30vw;
+    width: 30vw;
+    
+}
+
+.nome {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.75em;
+    font-weight: 600;
+    margin-top: 0.26em;
+    transition: color 0.5s;
+}
+
+.nome-menor {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.25em;
+    font-weight: 600;
+    margin-top: 0.26em;
+    transition: color 0.5s;
+}
+
+.navigation-links {
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    transition: color 0.5s;
+}
+
+.btnfuncionalidades {
+    margin-right: 2.2vw;
+}
+
+@media (max-width: 600px) {
+    .nome-menor {
+        color: #d5d5d5;
+    }
+    .navigation-links-menores-menor {
+        color: #d5d5d5;
+    }
+}
+                                    /* <-- empurra os botoes do header para a esqueda*/
+@media (max-width: 400px) {
+    .btnfuncionalidades {
+        margin-right: 1vw;   
+    }
+}
+
+.navigation-links-menores {
+    position: relative;
+    font-size: .8em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: .5rem;
+    margin-top: 1rem;
+    transition: color 0.5s;
+}
+
+@media (max-width: 375px) {
+    .navigation-links-menores-menor {
+        position: relative;
+        font-size: .7em;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: .2rem;
+        margin-top: 1rem;
+        transition: color 0.5s;
+    }                                               
+
+    .navigation-links-menores {
+        font-size: 0;
+        text-decoration: none;
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+  }
+
+
+
+@media (min-width: 375.1px) {
+   .navigation-links-menores-menor {
+        font-size: 0;
+        text-decoration: none;
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+        border: 0;
+   }
+
+}
+
+
+
+/*.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}*/
+
+body {
+    display: block;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.inicio {
+    max-width: 100%;
+    min-height: 120vh;                      /*para voltar como estava, apague o .inicio e no html coloque ele embaixo da row, tambem devolva o backg e o resto ao body*/
+    background-size: cover;
+    position: relative;
+    /*text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);*/
+    
+}
+
+.color-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*background-color: rgba(0, 0, 0, .2);*/
+}
+
+@media (max-width: 459px) {
+    .inicio {
+        min-height: 60vh;
+    }
+}
+
+@media (min-width: 459px){
+    .inicio {
+        min-height: 70vh;
+    }
+}
+
+@media (min-width: 655px){
+    .inicio {
+        min-height: 80vh;
+    }
+}                                           /* <-- Aqui muda a altura do começo da página.   valores originais= 55, 60, 70, 90, 120  */
+
+@media (min-width: 768px) {
+    .inicio {
+        min-height: 90vh;
+    }
+}
+
+@media (min-width: 1100px){
+    .inicio {
+        min-height: 120vh;
+    }
+}
+
+
+.intro-texto{
+    position: relative;
+    left: 12vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: aliceblue;
+    font-size: 3vw;
+}
+ 
+.intro-texto-textinho{
+    position: relative;
+    left: 24vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: aliceblue;
+    font-size: 2vw;
+}
+
+@media (max-width: 400px){
+    .intro-texto {
+        font-size: 4vw;
+        left: 11vw;
+    }
+    .intro-texto-textinho {
+        font-size: 2.8vw;
+    }
+}
+
+@media (min-width: 400px){
+    .intro-texto {
+        font-size: 4.3vw;
+        left: 10vw;
+    }
+    .intro-texto-textinho {
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 450px){
+    .intro-texto {
+        font-size: 4.5vw;
+        left: 8vw;
+    }
+    .intro-texto-textinho {
+        font-size: 3.2vw;
+        left: 23vw;
+    }
+}
+
+@media (min-width: 1000px){
+    .intro-texto {
+        font-size: 4.1vw;
+        left: 10vw;
+    }
+    .intro-texto-textinho {
+        font-size: 3vw;
+        left: 23vw;
+    }
+}
+
+.divLogoimgbody {
+   width: 100%;
+   /*margin-top: 12vw;*/     
+   margin-bottom: 20vh;      /*< esse é o responsável por posicionar o intro de forma dinamica e responsiva*/
+}
+
+@media (min-height: 100px) {
+    .divLogoimgbody {
+        width: 100%;
+        margin-bottom: 30vh;
+    }
+}
+
+@media (min-height: 500px) {
+    .divLogoimgbody {
+        width: 100%;
+        margin-bottom: 27vh;
+    }
+}
+                                            /*A ordem é muito importante, telas menores em cima e as maiores em baixo.    valores originais = 65, 55, 48, 38, 36, 30, 24*/
+@media (min-height: 700px) and (min-width: 600px) {
+    .divLogoimgbody {
+        width: 100%;
+        margin-bottom: 32vh;
+    }
+}
+
+@media (min-height: 700px) and (min-width: 1350px) {
+    .divLogoimgbody {
+        width: 100%;
+        margin-bottom: 41vh;
+    }
+}
+
+
+
+.chatbotEntrar {
+    width: 100%;
+    /*height: 80vh;*/
+    background-color: white;
+}
+
+@media (max-width: 371px) {
+    .chatbotEntrar {
+        height: 60vh;
+    }
+    .chatbotEntrar span {
+        width: 36em;
+        height: 20em;
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 371px) {
+    .chatbotEntrar {
+        height: 65vh;
+    }
+}
+
+@media (min-width: 480px) {
+    .chatbotEntrar {
+        height: 70vh;
+    }
+}                                       /* <-- Aqui muda a altura do elemento Chatbotentrar (a segunda seção).      valores originais = 60, 65, 70, 80, 90, 100*/
+
+@media (min-width: 700px) {
+    .chatbotEntrar {
+        height: 80vh;
+    }
+}
+
+@media (min-width: 920px) {
+    .chatbotEntrar {
+        height: 90vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .chatbotEntrar {
+        height: 100vh;
+    }
+}
+
+.chatbotEntrar h2 {
+    font-size: 3vw;
+    margin-right: 8vw;
+    margin-left: vw;
+}
+
+.entrarChat {
+    margin-right: 12vw;
+    margin-left: 0vw; 
+    font-size: 1vw;
+    padding: .3vw;
+    padding-right: 0vw;
+    padding-left: .1vw;
+    border-radius: 1.8rem;
+    background-color: #ffffff;
+    color: #000;
+    transition: all .9s;
+}
+
+.entrarChat:hover {
+    background-color: rgb(0, 123, 255);
+    color: white;
+    transition: all .9s;
+}
+
+.chatbotEntrar span {
+    width: 20em;
+    height: 10em;
+    font-size: 1.2vw;
+}
+
+@media  (max-width: 350px) {
+    .chatbotEntrar h2 {
+        font-size: 5.4vw;
+    }
+
+    .entrarChat {
+        font-size: 1.6vw;
+        margin-right: 1vw;
+        margin-left: 1vw;
+    }
+
+    .chatbotEntrar span {
+        width: 17em;
+        height: 14em;
+        font-size: 2.9vw;
+    }
+}
+
+@media  (min-width: 350px) {
+    .chatbotEntrar h2 {
+        font-size: 5.4vw;
+    }
+    
+
+    .chatbotEntrar span {
+        width: 17em;
+        height: 12em;
+        font-size: 2.9vw;
+    }
+}
+
+@media  (min-width: 551px) {
+    .chatbotEntrar h2 {
+        font-size: 4.5vw;
+    }
+
+    .chatbotEntrar span {
+        width: 17em;
+        height: 11em;
+        font-size: 2.75vw;
+    }
+}
+
+@media  (min-width: 632px) {
+    .chatbotEntrar h2 {
+        font-size: 4vw;
+    }
+
+    .chatbotEntrar span {
+        width: 17em;
+        height: 11em;
+        font-size: 2.5vw;
+    }
+}
+
+@media  (min-width: 752px) {
+    .chatbotEntrar h2 {
+        font-size: 3.75vw;
+    }
+
+    .chatbotEntrar span {
+        width: 17em;
+        height: 11em;
+        font-size: 2.2vw;
+    }
+}
+
+@media  (min-width: 956px) {
+    .chatbotEntrar h2 {
+        font-size: 3.5vw;
+    }
+
+    .chatbotEntrar span {
+        width: 17em;
+        height: 11em;
+        font-size: 2vw;
+    }
+}
+
+@media  (min-width: 1120px) {
+    .chatbotEntrar h2 {
+        font-size: 3.25vw;
+    }
+
+    .chatbotEntrar span {
+        width: 17em;
+        height: 11em;
+        font-size: 1.8vw;
+    }
+}
+
+@media  (min-width: 1300px) {
+    .chatbotEntrar h2 {
+        font-size: 3vw;
+    }
+
+    .chatbotEntrar span {               /* <-- Sujeito a mudança*/
+        width: 17em;
+        height: 11em;
+        font-size: 1.4vw;
+    }
+}
+
+.funcionalidades {
+    max-width: 100%;
+    height: 100vh;
+    color: white;
+    background-size: cover;
+    
+}
+
+@media (max-width: 459px) {
+    .funcionalidades {
+        max-height: 55vh;
+    }
+}
+
+@media (min-width: 459px){
+    .funcionalidades {
+        max-height: 65vh;
+    }
+}
+
+@media (min-width: 655px){
+    .funcionalidades {
+        max-height: 70vh;
+    }
+}                                         /* <-- Aqui muda a altura da parte de Funcionalidades */
+
+@media (min-width: 768px) {
+    .funcionalidades {
+        max-height: 90vh;
+    }
+}
+
+@media (min-width: 1100px){
+    .funcionalidades {
+        max-height: 120%;
+    }
+}
+
+.funcionalidades h2 {
+    font-size: 3vw;
+    margin-top: 9vw;
+    margin-bottom: 5vw;
+}
+
+.funcionalidades span {
+    width: 16em;
+    height: fit-content;
+    font-size: 1.1vw;
+    margin-top: 5vw;
+    
+}
+
+.botImg {
+    height: 16vw;
+    margin-left: 3.2vw;
+    margin-top: 1.6vw;
+
+}
+
+@media (max-width: 470px) {
+    .funcionalidades h2 {
+        font-size: 4vw;
+        margin-left: 8vw;
+    }
+    .funcionalidades span {
+        width: 40vw;
+        font-size: 2.2vw;
+        margin-left: 2.64vw;
+    }
+    .botImg {
+        margin-left: 6vw;
+    }
+}
+
+@media (min-width: 470px) {
+    .funcionalidades h2 {
+        font-size: 3.6vw;
+        margin-left: 8vw;
+    }
+    .funcionalidades span {
+        width: 40vw;
+        font-size: 2vw;
+        margin-left: 8vw;
+    }
+    .botImg {
+        margin-left: 5vw;
+    }
+}
+
+@media (min-width: 956px) {
+    .funcionalidades h2 {
+        font-size: 3.2vw;
+        margin-left: 8vw;
+    }
+    .funcionalidades span {
+        width: 40vw;
+        font-size: 2vw;
+        margin-left: 8vw;
+    }
+    .botImg {
+        margin-left: 4vw;
+    }
+}
+
+@media (min-width: 1120px) {
+    .funcionalidades h2 {
+        font-size: 3.2vw;
+        margin-left: 10vw;
+    }
+    .funcionalidades span {
+        width: 30vw;
+        font-size: 1.3vw;
+        margin-left: 14vw;
+    }
+    .botImg {
+        margin-left: 4vw;
+    }
+}
+
+footer {
+    background-image: linear-gradient( 145deg,rgba(255, 255, 255, 0.9), #afafafe7);
+    height: 80vh;       /*60*/
+    color: #000;
+    font-size: 1vw;
+    max-width: 100%;
+}
+
+.aviso {
+    width: 80vw;
+    margin: 2rem;
+    margin-top: 8rem;
+    
+}
+
+.redes {
+    width: 100%;
+    
+}
+
+.redes span {
+    margin-left: 18vw;
+    
+}
+
+.redeIcone {
+    margin-right: .4rem;
+}
+
+.linksFooter {
+    margin-top: 5vw;
+    margin-left: 25vw;
+}
+
+.dicaTexto {
+    font-size: 2vw;
+}
+
+.barrinha {
+    margin-top: 2vw;
+    background-color: #046188;
+}
+
+@media (max-width: 500px) {
+    footer {
+        font-size: 2vw;
+    }
+    .aviso {
+        margin-top: 12vw;
+    }
+    .redes span {
+        margin-left: 14vw;
+    }
+    .linksFooter {
+        margin-top: 6vw;
+        margin-left: 0vw;
+    }
+}
+
+@media (min-width: 500px) {
+    footer {
+        font-size: 1.8vw;
+    }
+    .aviso {
+        margin-top: 12vw;
+    }
+    .redes span {
+        margin-left: 14vw;
+    }
+    .linksFooter {
+        margin-top: 6vw;
+        margin-left: 0vw;
+    }
+}
+
+@media (min-width: 705px) {
+    footer {
+        font-size: 1.6vw;
+    }
+    .aviso {
+        margin-top: 12vw;
+    }
+    .redes span {
+        margin-left: 18vw;
+    }
+    .linksFooter {
+        margin-top: 6vw;
+        margin-left: 0vw;
+    }
+}
+
+@media (min-width: 1050px) {
+    footer {
+        font-size: 1.2vw;
+    }
+    .aviso {
+        margin-top: 8rem;
+    }
+    .redes span {
+        margin-left: 18rem;
+    }
+    .linksFooter {
+        margin-top: 5vw;
+        margin-left: 24vw;
+    }
+}

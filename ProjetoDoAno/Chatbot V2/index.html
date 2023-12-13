@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.css">
+  <title>Nexus</title>
+</head>
+
+<body>
+
+  <div class="box-questions" id="box-questions">
+    <div class="coluna sidebar" id="sidebar">
+      <div class="container-fluid align-content-center d-grid">
+        <div class="row align-items-center column-gap-4">
+          <div class="icone col-1" id="expandir-contrair" onclick="expandirContrair()">
+            <span>&#9776;</span>
+          </div>
+          <button type="button" class="nova-duvida col-md-6" id="nova-duvida">Nova Dúvida</button>
+        </div>
+        <div class="historico row" id="historico">
+
+        </div>
+       
+      </div>
+    </div>
+    <p id="status"></p>
+    <div id="history">
+     
+    </div>
+    <div class="footer" id="footer">
+      <input type="text" id="message-input" placeholder="Pergunte aqui...">
+      <button class="enviar btn-primary rounded-3" id="btn-submit" onclick="sendMessage()">Enviar</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="../bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+  <script src="main.js"></script>
+  <script src="https://kit.fontawesome.com/57dd56fb50.js" crossorigin="anonymous"></script>
+
+</body>
+ 
+</html>

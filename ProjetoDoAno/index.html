@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <title> Nexus </title>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="row">
+            <header id="header">
+                <div class="logo"> 
+                    <div class="column-gap-md-4 column-gap-1 d-flex">
+                        <img class="logo-imagem img-fluid d-none d-sm-block" src="logo.png" alt="logo">
+                        <img class="logo-imagem-menor img-fluid d-block d-sm-none" src="logo.png" alt="logo">
+                    </div>
+                    <div class="col">
+                        <span class="nome d-none d-sm-block" id="nome">Nexus</span>
+                        <span class="nome-menor d-block d-sm-none start-0">Nexus</span>
+                    </div>
+                </div>
+                <div class="col-md-7 col-8 text-end">
+                    <div class="row d-md-inline-flex d-inline-flex">
+                        <nav class="navigation container-fluid align-content-center">
+                            <a class="navigation-links d-sm-inline-block d-none m-0" href="#inicio" id="header">Início</a>
+                            <a class="navigation-links d-sm-inline-block d-none" href="#Chatbot" id="header">Chat Bot</a>
+                            <a class="navigation-links btnfuncionalidades d-sm-inline-block d-none" href="#Funcionalidades" id="header">Funcionalidades</a>
+                            <a class="navigation-links-menores d-inline-block d-sm-none m-0" href="#inicio">Início</a>
+                            <a class="navigation-links-menores d-inline-block d-sm-none" href="#Chatbot">Chat Bot</a>
+                            <a class="navigation-links-menores btnfuncionalidades d-inline-block d-sm-none" href="#Funcionalidades">Funcionalidades</a>
+                            <a class="navigation-links-menores-menor d-inline-block d-sm-none m-0" href="#inicio">Início</a>
+                            <a class="navigation-links-menores-menor d-inline-block d-sm-none" href="#Chatbot">Chat Bot</a>
+                            <a class="navigation-links-menores-menor btnfuncionalidades d-inline-block d-sm-none" href="#Funcionalidades">Funcionalidades</a>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <section id="inicio">
+        <div class="container-fluid inicio" style="background-image: url(backg.png);">
+            <div class="color-overlay d-flex justify-content-center align-items-center"></div>
+                <div class="row">
+                    <div class="divLogoimgbody">
+                        <img class="logo-imagem-body img-fluid" src="logo.png" alt="logo">
+                    </div>
+                    <div class="row">
+                        <span class="intro-texto col-8">
+                           Apresentamos o Nexus
+                        </span>   
+                    </div>                
+                    <div class="row">
+                        <span class="intro-texto-textinho col-4">
+                            Experimente
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="Chatbot">
+        <div class="chatbotEntrar container-fluid align-content-center d-grid">
+            <div class="row align-items-center justify-content-center column-gap-5">   <!-- -->
+                <h2 class="col-3 d-grid"> ChatBot
+                    <button class="entrarChat btn-primary" id="entrarChat">Entrar</button>
+                </h2>
+                <span class="col-1">
+                    Nexus é um chat bot cujo intuito é de ajudar em trabalhos escolares e estudos, 
+                    mostrando pesquisas fáceis com as melhores fontes de pesquisa, para a experiência do usuário ser aprofundada da melhor forma.  ​
+                </span>
+            </div>
+        </div>
+    </section>
+    
+    <section id="Funcionalidades">
+        <div class="funcionalidades container-fluid align-content-center d-grid" style="background-image: url(backg2.png);">
+            <div class="row align-items-center column-gap-5">
+                <h2 class="col-4"> Funcionalidades
+                    <img class="botImg" src="bot.png" alt="imagem de um bot">
+                </h2>
+                <span class="col-1">
+                    O Nexus é um sistema de conversação automatizado projetado com a finalidade específica de esclarecer dúvidas e fornecer instruções 
+                    simultaneamente. <br><br>Seu desenvolvimento foi direcionado exclusivamente para sua utilização em ambientes educacionais, 
+                    visando orientar os alunos a formular respostas com base nas explicações fornecidas pelo Nexus. <br><br>
+                    Faça uma pergunta e ele ira responder para você de forma simples e prática, 
+                    ajudando para responder dúvidas e trabalhos escolares​.
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid align-content-center justify-content-center d-grid">
+            <span class="aviso">A Nexus detém integralmente todos os direitos autorais relacionados à nossa empresa e à ferramenta aqui disponibilizada. É importante destacar que este projeto foi lançado de maneira experimental, e, consequentemente, *não assumimos responsabilidade* por respostas incorretas fornecidas pelo chatbot.
+            Cumpre ressaltar que, devido à natureza experimental do projeto, possíveis limitações podem existir no avanço do chatbot, e, portanto, não garantimos precisão absoluta em suas interações.
+             <br>
+             <br>
+            Agradecemos pela compreensão e pela utilização consciente deste recurso.
+            </span>
+            <div class="redes row align-items-center column-gap-5 d-block justify-content-center">
+                
+                <span class="col-4"><i class="redeIcone fa-brands fa-instagram"></i>@sttealthoficial</span>
+                <span class="col-4"><i class="redeIcone fa-solid fa-envelope"></i>Sttealthcompany@gmail.com​</span>
+            </div>
+            <!--<span class="barrinha placeholder-glow col-12 placeholder-lg"></span>-->
+        
+            <!-- Modal -->
+            <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                            <div class="modal-header">
+                                    <h5 class="modal-title" id="modalTitleId">Termos de Uso</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                Estes termos regem o uso do serviço (o "Site") e qualquer outro contrato relacionado ou relação legal com o Proprietário, de forma legalmente vinculante. A Nexus detém integralmente todos os direitos autorais relacionados à nossa empresa e à ferramenta aqui disponibilizada. É importante destacar que este projeto foi lançado de maneira experimental, e, consequentemente, não assumimos responsabilidade por respostas incorretas fornecidas pelo chatbot.
+                                Cumpre ressaltar que, devido à natureza experimental do projeto, possíveis limitações podem existir no avanço do chatbot, e, portanto, não garantimos precisão absoluta em suas interações.
+                                <br>
+                                Agradecemos pela compreensão e pela utilização consciente deste recurso.
+                                <br>                           
+                                1. **Condições Gerais de Uso**
+                                <br>
+                                A menos que especificado de outra forma, os termos detalhados nesta seção serão geralmente aplicados ao usar este Site. Condições únicas ou adicionais de uso poderão ser aplicadas em cenários específicos e serão indicadas neste documento. Ao usar este Site, os Usuários confirmam que atendem aos seguintes requisitos:
+                                <br>
+                                   - Não existem restrições para os Usuários em termos de serem Consumidores ou Usuários Empresariais.
+                                <br>
+                                2. **Conteúdos do Site**
+                                <br>
+                                A menos que especificado de outra forma, todos os conteúdos fornecidos por este Site pertencem e são fornecidos pelo Proprietário ou seus licenciadores. O Proprietário se esforçará para garantir que os conteúdos não violem disposições legais ou direitos de terceiros, mas em casos contrários, os Usuários são encorajados a comunicar reclamações usando os dados de contato fornecidos.
+                                <br>
+                                2.1 **Direitos Relacionados a Conteúdos**
+                                <br>
+                                O Proprietário mantém todos os direitos de propriedade intelectual sobre os conteúdos. Os Usuários não podem usar os conteúdos de maneira que não seja necessária para a utilização apropriada do Serviço. Exceto quando expressamente permitido, os Usuários não podem copiar, modificar, vender, sublicenciar, criar trabalhos derivados, ou permitir que terceiros o façam.
+                                <br>
+                                2.2 **Acesso a Recursos Externos**
+                                <br>
+                                Os Usuários reconhecem que o Proprietário não controla recursos externos fornecidos por terceiros e não é responsável por seus conteúdos. As condições aplicáveis a esses recursos serão regidas pelos termos de terceiros ou pela legislação aplicável.
+                                <br>
+                                2.3 **Uso Aceitável**
+                                <br>
+                                O Site e o Serviço devem ser usados conforme fornecidos e de acordo com estes Termos e a legislação aplicável. Os Usuários são responsáveis por garantir conformidade com as leis, regulamentos e direitos de terceiros. O Proprietário reserva o direito de tomar medidas apropriadas para proteger seus interesses legítimos, incluindo negar acesso ao Site, relatar conduta ilícita às autoridades competentes e defender seus direitos contra atividades prejudiciais.
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <script>
+                var modalId = document.getElementById('modalId');
+            
+                modalId.addEventListener('show.bs.modal', function (event) {
+                      // Button that triggered the modal
+                      let button = event.relatedTarget;
+                      // Extract info from data-bs-* attributes
+                      let recipient = button.getAttribute('data-bs-whatever');
+            
+                    // Use above variables to manipulate the DOM
+                });
+            </script>
+            
+            <div class="modal fade" id="modalId2" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                            <div class="modal-header">
+                                    <h5 class="dica modal-title" id="modalTitleId">Dica</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                        <div class="modal-body">
+                            <div class="dicaTexto container-fluid">
+                                No celular, se você deixar a tela na horizontal, o site fica mais bonito =).
+                            </div>
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <script>
+                var modalId = document.getElementById('modalId');
+            
+                modalId.addEventListener('show.bs.modal', function (event) {
+                      // Button that triggered the modal
+                      let button = event.relatedTarget;
+                      // Extract info from data-bs-* attributes
+                      let recipient = button.getAttribute('data-bs-whatever');
+            
+                    // Use above variables to manipulate the DOM
+                });
+            </script>
+            
+            
+            <ul class="linksFooter nav nav-tabs" id="navId" role="tablist">
+                <li class="nav-item">
+                    <a href="#tab1Id" class="nav-link" aria-current="page" data-bs-toggle="modal" data-bs-target="#modalId">Termos de Uso</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tab2Id" class="nav-link dica" aria-current="page" data-bs-toggle="modal" data-bs-target="#modalId2">Dica</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tab5Id" class="nav-link disabled" data-bs-toggle="tab">desativado</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link disabled" data-bs-toggle="tab">desativado</a>
+                </li>
+            </ul>
+            
+        </div>
+    </footer>
+    <script src="jssite.js"></script>
+    <script src="https://kit.fontawesome.com/57dd56fb50.js" crossorigin="anonymous"></script>
+</body>
+</html>

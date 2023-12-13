@@ -1,0 +1,248 @@
+
+:root {
+  --dark: #0c0c0c;
+  --white: #fff;
+  --purple: #3d25da;
+  --gray: #000000;
+  --gray2: #cccccc;
+}
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  .nova-duvida {
+    display: none;
+  }
+}
+ 
+body {
+ 
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+ 
+.icone {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  transition: all 1s ease;
+ 
+}
+ 
+.icone:hover {
+  transform: scale(1.2);
+}
+ 
+/*.icone.clicked {
+  transform: scale(0.8) translateX(-50%);
+  border-width: 4px;
+ 
+}     "aparentemente, não funciona"     */
+ 
+.nova-duvida {
+  color: white;
+  border: white solid 2px;
+  border-radius: 1rem;
+  padding: .5rem;
+  transition: all .2s;
+  background-color: rgb(112, 209, 188);
+}
+
+.nova-duvida:hover {
+  cursor: pointer;
+  transition: .4s;
+  color: white;
+  background-color: rgb(53, 161, 255);
+}
+
+ 
+.box-questions {
+  background-color: var(--white);
+  color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 3000px;
+  width: 6000px;
+  text-align: center;
+  background-image: url('logo.png');
+  background-size: 15%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .9;
+}
+ 
+.coluna {
+  position: fixed;
+  width: 6vw;
+  height: 100%;
+  background-color: rgb(112, 209, 188); /* Cor de fundo da coluna esquerda */
+  overflow-x: hidden;
+  transition: width 0.5s ease; /* Adicione esta linha para a transição suave da largura */
+}
+
+@media (max-width: 600px) {
+  .coluna {
+    width: 12vw;
+  }
+  .icone {
+    font-size: 1.4rem;
+  }
+  .my-message {
+    font-size: 2.5vw;
+  }
+  .response-message {
+    font-size: 3vw;
+    margin-left: 0;
+  }
+  #history {
+    margin-left: 3rem;
+  }
+  .enviar {
+    font-size: 1vw;
+  }
+  .historico-titulo {
+    font-size: 3.2vw;
+  }
+}
+ 
+
+.historico {
+  background-color: rgb(25, 219, 177);
+  border-radius: .4rem;
+  padding: 1rem;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 4rem;
+}
+
+.abreviar-texto {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 1rem;
+}
+ 
+input{
+  width: 60%;
+  background-color: #b8b8b8;
+  padding: 1.25%;
+  border-radius: 1rem;
+  font-size: 1rem;
+  border: none;
+}
+ 
+.enviar{
+  border: none;
+  padding: .8%;
+  font-size: 1rem;
+  margin-left: 1vw;
+  background-color: #b8b8b8;  
+}
+ 
+.enviar:hover{
+  cursor: pointer;
+  transition: .4s;
+  color: white;
+  /*background-image: linear-gradient(to right, rgb(61, 0, 203), rgb(0, 85, 203));*/
+  background-color: rgb(47, 71, 150);
+}
+ 
+#history{
+  margin-left: 7rem;
+  padding: 1rem;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+}
+ 
+.box-my-message{
+  display: flex;
+  justify-content: flex-end;
+}
+ 
+.box-response-message{
+  display: flex;
+  justify-content: flex-start;
+  width: 60%;
+  margin-top: 2vw;
+}
+ 
+.my-message,
+.response-message{
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+  margin: 0;
+}
+ 
+.my-message{
+  text-align: right;
+  background-color: #b8b8b8;
+  margin-right: .5rem;
+  margin-top: 1.5rem;
+}
+ 
+.response-message{
+  text-align: left;
+  background-color: #b8b8b8;
+}
+.excluir-conversa-btn {
+  cursor: pointer;
+  font-size: 15px;
+  color: #000000;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+}
+ 
+.excluir-conversa-btn img {
+  width: 15px; /* Ajuste a largura conforme necessário */
+  height: 15px; /* Ajuste a altura conforme necessário */
+  margin-right: 4px; /* Ajuste a margem conforme necessário */
+}
+ 
+.excluir-conversa-btn:hover {
+  text-decoration: underline;
+}
+ 
+.historico-titulo {
+  display: flex;
+  align-items: center;
+  padding: 1vw;
+  padding-right: 2vw;
+  padding-left: 1.5vw;
+  margin-bottom: 1vw;
+  border: #fff solid 2px;
+  border-radius: 1rem;
+  background-color: rgb(25, 219, 177);
+  color: white; 
+}
+
+@media (min-width: 600px) {
+  .historico-titulo {
+    font-size: 2.2vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  .historico-titulo {
+    font-size: 1.2vw;
+  }
+}
+ 
