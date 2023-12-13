@@ -11,7 +11,7 @@ Desculpa pela pequena bagunça :P
 | :fire: Desafio     | -
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-
+#vitrinedev
 ## Detalhes do projeto
 
 Feito como projeto de ano da minha escola (SENAC), projeto de ano é como se fosse um tcc.
