@@ -7,7 +7,7 @@ Desculpa pela pequena bagunça :P
 | -------------  | --- |
 | :sparkles: Nome        | **Nexus**
 | :label: Tecnologias | html, css, javascript, bootstrap
-| :rocket: URL         | [https://url-deploy.com.br](https://pedrodek.github.io/ProjetoNexus/)
+| :rocket: URL         | [https://pedrodek.github.io/ProjetoNexus/ProjetoDoAno](https://pedrodek.github.io/ProjetoNexus/ProjetoDoAno)
 | :fire: Desafio     | -
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
