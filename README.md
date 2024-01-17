@@ -19,3 +19,5 @@ Feito como projeto de ano da minha escola (SENAC), projeto de ano é como se fos
 Esses projetos tem todos os anos, esse foi meu segundo, o primeiro tinha sido um app que basicamente fazia previsões de quanto você gastaria de energia em um determinado aparelho por um periodo de tempo.
 Ele ainda possui alguns problemas, mas o site consegue se adaptar aos diferentes tamanhos de tela.
 
+## Aviso: A API do Chat bot parou de funcionar provavelmente devido à falta de tokens.
+
